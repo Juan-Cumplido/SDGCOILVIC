@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="521.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sdgcoilvic.controladores.ModificarProfesorUVControlador">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="470.0" prefWidth="651.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Pane fx:id="pane_Principal" layoutX="19.0" layoutY="6.0" prefHeight="510.0" prefWidth="661.0" AnchorPane.bottomAnchor="-43.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="-19.0" AnchorPane.topAnchor="6.0">
+                    <children>
+                        <ImageView fx:id="imgView_Escudo" fitHeight="113.0" fitWidth="243.0" layoutX="517.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../recursos/escudocoilvic.jpg" />
+                            </image>
+                        </ImageView>
+                        <Label fx:id="label_Idioma" layoutX="150.0" layoutY="363.0" text="Idioma">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label_TipoContratacion" layoutX="72.0" layoutY="248.0" text="Tipo de contratación">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label_NumPersonal" accessibleText="labelNombre" alignment="CENTER" layoutX="73.0" layoutY="39.0" style="&#10;" text="Numero de personal" textAlignment="CENTER" wrapText="false">
+                            <font>
+                                <Font name="Arial Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="textField_NumPersonal" layoutX="199.0" layoutY="33.0" prefHeight="15.0" prefWidth="243.0" style="-fx-background-radius: 13;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <cursor>
+                              <Cursor fx:constant="TEXT" />
+                           </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_Nombre" layoutX="198.0" layoutY="70.0" prefHeight="15.0" prefWidth="243.0" style="-fx-background-radius: 13;">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <cursor>
+                                <Cursor fx:constant="TEXT" />
+                            </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_ApellidoPaterno" layoutX="198.0" layoutY="105.0" prefHeight="15.0" prefWidth="243.0" style="-fx-background-radius: 13;">
+                            <cursor>
+                                <Cursor fx:constant="TEXT" />
+                            </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_ApellidoMaterno" layoutX="200.0" layoutY="140.0" prefHeight="15.0" prefWidth="243.0" style="-fx-background-radius: 13;">
+                            <cursor>
+                                <Cursor fx:constant="TEXT" />
+                            </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_Correo" layoutX="198.0" layoutY="175.0" prefHeight="15.0" prefWidth="243.0" style="-fx-background-radius: 13;">
+                            <cursor>
+                                <Cursor fx:constant="TEXT" />
+                            </cursor>
+                        </TextField>
+                        <TextField fx:id="textField_Disciplina" layoutX="199.0" layoutY="211.0" prefHeight="15.0" prefWidth="243.0" style="-fx-background-radius: 13;">
+                            <cursor>
+                                <Cursor fx:constant="TEXT" />
+                            </cursor>
+                        </TextField>
+                        <ComboBox fx:id="comboBox_TipoContratacion" layoutX="198.0" layoutY="244.0" prefHeight="25.0" prefWidth="243.0" promptText="Seleccione tipo de contratación">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ComboBox>
+                        <ComboBox fx:id="comboBox_CategoriaContratacion" layoutX="200.0" layoutY="284.0" prefHeight="25.0" prefWidth="243.0" promptText="Seleccione categoría de contratación">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ComboBox>
+                        <ComboBox fx:id="comboBox_AreaAcademica" layoutX="201.0" layoutY="320.0" prefHeight="25.0" prefWidth="243.0" promptText="Seleccione área académica">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ComboBox>
+                        <ComboBox fx:id="comboBox_Idioma" layoutX="201.0" layoutY="359.0" prefHeight="25.0" prefWidth="243.0" promptText="Seleccione su idioma">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ComboBox>
+                        <Label fx:id="label_Correo" alignment="CENTER" layoutX="149.0" layoutY="180.0" style="&#10;" text="Correo" textAlignment="CENTER" wrapText="false">
+                            <font>
+                                <Font name="Arial Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label_ApellidoPaterno" alignment="CENTER" layoutX="84.0" layoutY="145.0" style="&#10;" text="Segundo apellido" textAlignment="CENTER" wrapText="false">
+                            <font>
+                                <Font name="Arial Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label_ApellidoMaterno" alignment="CENTER" layoutX="98.0" layoutY="110.0" style="&#10;" text="Primer apellido" textAlignment="CENTER" wrapText="false">
+                            <font>
+                                <Font name="Arial Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label_Nombre" alignment="CENTER" layoutX="143.0" layoutY="75.0" style="&#10;" text="Nombre" textAlignment="CENTER" wrapText="false">
+                            <font>
+                                <Font name="Arial Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label_Region" layoutX="149.0" layoutY="399.0" text="Región">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="comboBox_Region" layoutX="200.0" layoutY="395.0" prefHeight="25.0" prefWidth="243.0" promptText="Seleccione su región">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ComboBox>
+                        <Label fx:id="label_CategoriaContratacion" layoutX="43.0" layoutY="284.0" text="Categoría de contratación">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label_AreaAcademica" layoutX="99.0" layoutY="324.0" text="Área académica ">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label_EstadoProfesor" layoutX="500.0" layoutY="180.0" text="Estado del Profesor">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="comboBox_EstadoProfesor" layoutX="474.0" layoutY="212.0" prefWidth="150.0" promptText="Estado" />
+                        <Label layoutX="133.0" layoutY="216.0" text="Disciplina">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="button_Guardar" layoutX="332.0" layoutY="443.0" mnemonicParsing="false" onAction="#button_Guardar" style="-fx-background-color: #04c9fa;" text="Guardar cambios">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                        <Button fx:id="button_Cancelar" layoutX="216.0" layoutY="443.0" mnemonicParsing="false" onAction="#button_Cancelar" style="-fx-background-color: #fc542c;" text="Cancelar">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                    </children>
+                </Pane>
+                <TitledPane fx:id="titledPane_ModificarProfesor" animated="false" collapsible="false" prefHeight="27.0" prefWidth="640.0" text="SDGCOILVIC        Modificar Profesor UV                                                                                            Universidad Veracruzana" wrapText="true" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="379.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sdgcoilvic.controladores.ModificarProfesorExternoControlador">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="470.0" prefWidth="651.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Pane fx:id="pane_Principal" layoutY="7.2" prefHeight="379.0" prefWidth="655.0" AnchorPane.bottomAnchor="-7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
+                    <children>
+                        <ImageView fx:id="imgView_Logo" fitHeight="113.0" fitWidth="243.0" layoutX="526.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../recursos/escudocoilvic.jpg" />
+                            </image>
+                        </ImageView>
+
+                        <Label fx:id="label_Idioma" layoutX="152.0" layoutY="185.0" text="Idioma">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label_Institucion" layoutX="130.0" layoutY="225.0" text="Institución">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                       
+                  <Label fx:id="label_EstadoProfesor" layoutX="505.0" layoutY="147.0" text="Estado del Profesor">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                    </children>
+                </Pane>
+                <Label fx:id="label_Nombre" alignment="CENTER" layoutX="141.0" layoutY="46.0" style="&#10;" text="Nombre" textAlignment="CENTER" wrapText="false">
+                    <font>
+                        <Font name="Arial Bold" size="12.0" />
+                    </font>
+                </Label>
+                <TitledPane animated="false" collapsible="false" layoutY="-1.0" prefHeight="27.0" prefWidth="640.0" text="SDGCOILVIC        Modificar Profesor externo                                                                                   Universidad Veracruzana" wrapText="true" />
+                <Label fx:id="label_ApellidoPaterno" alignment="CENTER" layoutX="102.0" layoutY="81.0" style="&#10;" text="Primer apellido" textAlignment="CENTER" wrapText="false">
+                    <font>
+                        <Font name="Arial Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label fx:id="label_ApellidoMaterno" alignment="CENTER" layoutX="88.0" layoutY="117.0" style="&#10;" text="Segundo apellido" textAlignment="CENTER" wrapText="false">
+                    <font>
+                        <Font name="Arial Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label fx:id="label_Correo" alignment="CENTER" layoutX="149.0" layoutY="153.0" style="&#10;" text="Correo" textAlignment="CENTER" wrapText="false">
+                    <font>
+                        <Font name="Arial Bold" size="12.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="textField_Nombre" layoutX="198.0" layoutY="41.0" prefHeight="15.0" prefWidth="243.0" style="-fx-background-radius: 13;">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+                </TextField>
+                <TextField fx:id="textField_ApellidoPaterno" layoutX="198.0" layoutY="76.0" prefHeight="15.0" prefWidth="243.0" style="-fx-background-radius: 13;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+                <TextField fx:id="textField_ApellidoMaterno" layoutX="198.0" layoutY="112.0" prefHeight="15.0" prefWidth="243.0" style="-fx-background-radius: 13;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+                <TextField fx:id="textField_Correo" layoutX="199.0" layoutY="148.0" prefHeight="15.0" prefWidth="243.0" style="-fx-background-radius: 13;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+                <ComboBox fx:id="comboBox_Idioma" layoutX="203.0" layoutY="191.0" prefHeight="25.0" prefWidth="243.0" promptText="Seleccione su idioma">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ComboBox>
+                        <ComboBox fx:id="comboBox_Institucion" layoutX="203.0" layoutY="229.0" prefHeight="25.0" prefWidth="243.0" promptText="Seleccione su institución">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ComboBox>
+                  <ComboBox fx:id="comboBox_EstadoProfesor" layoutX="485.0" layoutY="181.0" prefWidth="150.0" promptText="Estado" />
+                    <Button fx:id="button_Cancelar" layoutX="232.0" layoutY="291.0" mnemonicParsing="false" onAction="#button_Cancelar" style="-fx-background-color: #fc542c;" text="Cancelar">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Button>
+                        <Button fx:id="button_Guardar" layoutX="325.0" layoutY="291.0" mnemonicParsing="false" onAction="#button_Guardar" style="-fx-background-color: #04c9fa;" text="Guardar cambios">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                        </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
